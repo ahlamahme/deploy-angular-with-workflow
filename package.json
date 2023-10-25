@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:prod": "ng build --deploy-url /weather-app/",
+    "build:prod": "ng build --deploy-url /angular-deploy2/",
     "watch": "ng build --watch --configuration development",
     "test:prod": "ng test --browsers=ChromeHeadless --watch=false --code-coverage"
   },
