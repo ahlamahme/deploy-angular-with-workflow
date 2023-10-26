@@ -33,9 +33,7 @@ jobs:
 
       - name: Build
         run: |
-               npm ci
                ng build --prod
-            
                sed -i 's|<base href="/">|<base href="/deploy-angular-with-workflow /">|' dist/angular-deploy2/index.html
 
       - name: Deploy to GitHub Pages
