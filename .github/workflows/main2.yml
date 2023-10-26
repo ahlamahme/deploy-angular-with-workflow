@@ -32,7 +32,7 @@ jobs:
           SECRET_API_KEY: ${{ secrets.API_KEY}}
 
       - name: Build
-        run: npm run build:prod
+        run: npm run build --prod
               sed -i 's|<base href="/">|<base href="/deploy-angular-with-workflow /">|' dist/angular-deploy2/index.html
 
       - name: Deploy to GitHub Pages
