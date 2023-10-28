@@ -37,7 +37,7 @@ jobs:
       - name: Build
         run: |
           npm ci
-          ng build --prod
+          ng build
 
           sed -i 's|<base href="/">|<base href="/angular-deploy2/">|' dist/index.html
 
