@@ -30,6 +30,9 @@ jobs:
           files: 'src/environments/environment.prod.ts'
         env:
           SECRET_API_KEY: ${{ secrets.API_KEY}}
+          
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
 
       - name: Build
         run: |
