@@ -33,8 +33,10 @@ jobs:
 
       - name: Build
         run: |
-               ng build:prod
-               sed -i 's|<base href="/">|<base href="/deploy-angular-with-workflow /">|' dist/angular-deploy2/index.html
+          npm ci
+          ng build --prod
+
+          sed -i 's|<base href="/">|<base href="/angular-deploy2/">|' dist/index.html
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
