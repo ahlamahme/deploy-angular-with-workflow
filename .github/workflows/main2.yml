@@ -40,7 +40,7 @@ jobs:
       - name: Modify index.html
         run: |
           
-          sed -i 's|<base href="/">|<base href="/angular-deploy2/">|' index.html
+          sed -i 's|<base href="/">|<base href="/deploy-angular-with-workflow/">|' index.html
 
       - name: Commit changes
         run: |
