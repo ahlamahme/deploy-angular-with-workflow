@@ -39,7 +39,7 @@ jobs:
 
       - name: Modify index.html
         run: |
-          cd dist/angular-deploy2
+          
           sed -i 's|<base href="/">|<base href="/angular-deploy2/">|' index.html
 
       - name: Commit changes
