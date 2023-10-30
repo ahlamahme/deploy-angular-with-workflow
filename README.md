@@ -4,7 +4,7 @@ In this project I use github Actions to build and deploy angular small project.
 
 ## workflow
 
-The workflow contain two jobs and deploy:
+The workflow contains two jobs build and deploy:
 
 
 ## In build job 
